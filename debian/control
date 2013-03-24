@@ -1,0 +1,20 @@
+Source: mutt-vc-query
+Section: mail
+Priority: optional
+Maintainer: Rafael Laboissiere <rafael@debian.org>
+Build-Depends: debhelper (>= 5), cdbs, libvc-dev, autotools-dev
+Standards-Version: 3.8.1
+Homepage: http://rolo.sourceforge.net/
+Vcs-Git: git://alioth.debian.org/~rafael/public_git/deb-pkg/mutt-vc-query.git
+Vcs-Browser: http://git.debian.org/?p=users/rafael/deb-pkg/mutt-vc-query.git
+
+Package: mutt-vc-query
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Suggests: mutt
+Description: vCard query utility for mutt
+ This package contains a utility for doing queries to a vCard data
+ file from the mutt mail user agent using mutt's query_command.  You
+ will then be able to query email addresses from the data file when
+ you use the `Q' command in mutt.
+

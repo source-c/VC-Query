@@ -1,0 +1,71 @@
+.\" Process this file with
+.\" groff -man -Tascii mutt_vc_query.1
+.\" $Id: mutt_vc_query.1,v 1.6 2003/05/19 07:32:30 ahsu Rel $
+.Dd May 14, 2003
+.Os
+.Dt MUTT_VC_QUERY 1
+.Sh NAME
+.Nm mutt_vc_query
+.Nd vCard query utility for mutt
+.Sh SYNOPSIS
+.Nm mutt_vc_query
+.Oo
+.Fl m |
+.Fl e
+.Oc
+.Op Fl t Ar type
+.Op Fl f Ar datafile
+.Ar query
+.Nm mutt_vc_query
+.Op Fl v
+.Nm mutt_vc_query
+.Op Fl V
+.Nm mutt_vc_query
+.Op Fl h
+.Sh DESCRIPTION
+A vCard query utility for mutt.  This utility can be used at the
+shell prompt to perform ad-hoc queries, but it is meant to be used
+by mutt's
+.Qo query_command Qc option.  Place the following line in your
+.Qo ~/.muttrc Qc file:
+.Pp
+.Dl set query_command = Qo mutt_vc_query '%s' Qc
+.Pp
+The search using the given query string will be case insensitive.
+The options are as follows:
+.Bl -tag -offset indent -width "-V"
+.It -e
+Sort the results by email.
+.It -f
+Use the datafile to perform the query.
+.It -h
+Display usage help.
+.It -m
+Sort the results by the miscellaneous field.
+.It -t
+Uses the specified type for the miscellaneous field.
+.It -v
+Display the version.
+.It -V
+Display the copyright and license.
+.El
+.Sh FILES
+.Bl -tag -width "~/.rolo/contacts.vcf" -compact
+.It Pa ~/.rolo/contacts.vcf
+Default data file that mutt_vc_query will query.
+.El
+.Sh EXAMPLES
+To query for the string
+.Qo Hsu Qc and have the miscellaneous field be populated by the type
+.Qo NICKNAME Qc :
+.Pp
+.Dl mutt_vc_query -t NICKNAME Hsu
+.Sh DIAGNOSTICS
+.Ex -std mutt_vc_query
+.Sh SEE ALSO
+.Xr muttrc 5 ,
+.Xr rolo 1
+.Sh AUTHORS
+.An "Andrew Hsu" Aq ahsu@users.sf.net
+.Sh BUGS
+Man page is not finished yet.

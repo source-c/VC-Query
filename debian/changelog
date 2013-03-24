@@ -1,0 +1,37 @@
+mutt-vc-query (002-5) unstable; urgency=low
+
+  * debian/control:
+    + Bump Standards-Version to 3.8.1 (no changes needed)
+    + The package is now maintained with Git at alioth.debian.org.  Add
+      Vcs-Git field and change Vcs-Browser accordingly.
+    + Fix Lintian warning debhelper-but-no-misc-depends
+
+ -- Rafael Laboissiere <rafael@debian.org>  Sat, 25 Apr 2009 16:41:05 +0200
+
+mutt-vc-query (002-4) unstable; urgency=low
+
+  * debian/control:
+    + Added Vcs-Svn and Vcs-Browser fields
+    + Dropped the Homepage pseudo-header from the extended description
+    + Bumped Standards-Version to 3.7.3
+
+ -- Rafael Laboissiere <rafael@debian.org>  Sat, 15 Dec 2007 23:35:50 +0100
+
+mutt-vc-query (002-3) unstable; urgency=low
+
+  * debian/control: Fixed typo in Description (closes: #415232)
+
+ -- Rafael Laboissiere <rafael@debian.org>  Sat, 17 Mar 2007 12:33:41 +0100
+
+mutt-vc-query (002-2) unstable; urgency=low
+
+  * First release to unstable (closes: #410657)
+
+ -- Rafael Laboissiere <rafael@debian.org>  Mon, 12 Feb 2007 19:07:03 +0100
+
+mutt-vc-query (002-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Rafael Laboissiere <rafael@debian.org>  Mon, 12 Feb 2007 12:33:33 +0100
+

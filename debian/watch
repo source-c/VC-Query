@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/_/-/ \
+    http://rolo.sourceforge.net/ .*/mutt_vc_query-(.*)\.tar\.gz
